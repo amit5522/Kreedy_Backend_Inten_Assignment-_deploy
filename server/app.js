@@ -11,6 +11,11 @@ app.use(cors({
 
 
 
+
+//configure dot env
+const dotenv = require("dotenv");
+dotenv.config({ path: "server/config/.env" });
+
 //middleware parses incoming requests with JSON
 app.use(express.json({limit: '50mb'}));
 
