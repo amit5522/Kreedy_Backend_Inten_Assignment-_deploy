@@ -66,7 +66,7 @@ const Login_from = () => {
     <div>
       {loading ? <Loading /> :
         <div>
-          { reg?<div class="m-4" style={{ width: '50vw' }}>
+          { reg?<div class="m-4" style={{maxWidth:"800px",minWidth:"200px" }}>
             <h3 className='bg-secondary text-muted'>Login Form</h3>
             <label for="exampleFormControlInput2" class="form-label">Email address</label>
             <input required type="email" class="form-control" onChange={(e) => setemail(e.target.value)} value={email} id="exampleFormControlInput2" placeholder="Email*" />
@@ -76,7 +76,7 @@ const Login_from = () => {
             <button type="button" class="btn btn-warning m-3" onClick={(e) => changereg(e)} >{"Go On Register Form"}</button>
         </div>
         :
-        <div class="m-4" style={{ width: '50vw' }}>
+        <div class="m-4" style={{maxWidth:"800px",minWidth:"200px"   }}>
             <h3 className='bg-secondary text-muted'>Registration Form</h3>
             <label for="exampleFormControlInput1" class="form-label">Name</label>
             <input required min='4' max='20' type="text" class="form-control" onChange={(e) => setname(e.target.value)} value={name} id="exampleFormControlInput1" placeholder="Name*" />
